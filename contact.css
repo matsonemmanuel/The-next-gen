@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('T4.jpg'); /* Replace with your actual image path */
+  background-size: cover;         /* Ensures image covers entire screen */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;   /* Prevent image from repeating */
+  background-attachment: fixed;   /* Makes the background static while content scrolls */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: darkgreen;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+  width: auto;  /* Keeps aspect ratio */
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px; /* Rounded corners */
+  border: 2px solid #eee; /* Optional subtle border */
+  padding: 2px; /* Optional padding inside border */
+  background-color: #fff; /* Optional background */
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00c897;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 220px; 
+  background: black;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add top spacing between navbar and form */
+#contact-section {
+  padding-top: 120px; /* Adjust depending on your navbar height */
+  background-color: #f9f9f9; /* Optional background for section */
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Input Fields & Textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0bc4a8;
+  box-shadow: 0 0 0 3px rgba(11, 196, 168, 0.2);
+  outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: #0bc4a8;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #099d87;
+}
+
+/* Map container */
+.map-container {
+  margin-top: 3rem;
+  padding: 0 1rem;
+  max-width: 1600px;        /* Adjusted width for a balanced layout */
+  height: 400px;           /* Increased height */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+}
+
+/* Responsive iframe */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+
+
+
+
+footer {
+  background: linear-gradient(135deg, #e8fdf5, #d9f2ff); /* Soft gradient background */
+  color: rgb(11, 196, 168);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
+@media (max-width: 600px) {
+  .logo img {
+    height: 40px;
+  }
+}
+
+.contact-section {
+  background-color: darkgreen;
+  color: rgb(11, 196, 168);
+  padding: 40px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 280px;
+  margin: 20px;
+   background: linear-gradient(135deg, #e8fdf5, #d9f2ff); /* Soft gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.contact-card h3 {
+  color: #191502;
+  margin-bottom: 15px;
+}
+
+.contact-card a {
+  color: #00BFFF;
+  text-decoration: none;
+}
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background: linear-gradient(135deg, #e8fdf5, #d9f2ff); /* Soft gradient background */
+  color: rgb(11, 196, 168);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
+@media (max-width: 600px) {
+  .logo img {
+    height: 40px;
+  }
+}

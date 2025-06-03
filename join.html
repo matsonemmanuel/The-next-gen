@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Next Generation - TNG</title>
+  <link rel="stylesheet" href="join.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+       <a href="http://127.0.0.1:5500/index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: white;">
+        <img src="TNG LOGO.jpg" alt="The Next Generation Logo" />
+        <span class="logo-text">The Next Generation (TNG)</span>
+       </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="http://127.0.0.1:5500/about.html">About Us</a></li>
+            <li><a href="#who-we-are">Who We Are</a></li>
+            <li><a href="#what-we-do">What We Do</a></li>
+            <li><a href="http://127.0.0.1:5500/team.html">Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+<body>
+<!-- Hero Section -->
+  <section class="hero">
+  <div class="hero-content">
+    <div class="text">
+      <h1 class="line">A Place for Passion and Innovation</h1>
+      <p class="line">Empowering Communities — Shaping the Future</p>
+    </div>
+    <div class="image-group">
+      <img src="M1.3.jpg" alt="Team Member 1">
+      <img src="I2.jpg" alt="Team Member 2">
+      <img src="J1.jpg" alt="Team Leader">
+    </div>
+  </div>
+</section>
+
+<div class="hero-slider">
+  <div class="hero-slide-text">A PLACE FOR PASSION AND INNOVATION — Empowering Communities — Shaping the Future</div>
+</div>
+
+  
+  <div class="latest-update-bar">
+  <div class="latest-label">
+    <span>&#9654;</span>LATEST UPDATES:
+  </div>
+  <div class="latest-slider">
+    <div class="latest-text">
+      Keep an eye on this page — Fair Hiring Process — We'll notify shortlisted candidates — Join Us Later — New roles will be posted here —
+    </div>
+  </div>
+</div>
+
+<div class="vacancy-container">
+  <div class="vacancy-card">
+    <h2 class="vacancy-title zoom-animate">NO VACANCIES AVAILABLE</h2>
+    
+    <div class="vacancy-divider">
+      <span class="line"></span>
+      <span class="icon">⚠️</span>
+      <span class="line"></span>
+    </div>
+    
+    <p class="vacancy-message">
+      TNG currently has 
+      <a href="#" class="vacancy-button">no open positions</a> 
+      at this time.
+    </p>
+    
+    <p class="vacancy-note">
+      Please check back later for future opportunities!
+    </p>
+  </div>
+</div>
+
+<section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-card">
+        <h3>UGANDA</h3>
+        <p><strong>Our Address:</strong> Kikuube,<br>
+        Kyangwali, Namakakale.</p>
+        <p><strong>Email:</strong> <a href="thenextgen.org">thenextgeneration.org</a></p>
+        <p><strong>Call at:</strong> ‪+256393240900‬</p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>DRC</h3>
+        <p><strong>Our Address:</strong> No. 10 Tulipiers Street, Les Volcans Neighborhood,<br>
+        Bunia.</p>
+        <p><strong>Email:</strong> <a href="thenextgeneration.org">thenextgeneration794@gmail.com</a></p>
+        <p><strong>Call at:</strong> ‪+243994252254‬</p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>KENYA</h3>
+        <p><strong>Our mailing Address:</strong> 5602 Tinkerbell ln apt 2411 Fort Worth, Tx 76119</p>
+        <p><strong>Email:</strong> <a href="thenextgen.org">thenextgen.org</a></p>
+        <p><strong>Call at:</strong> ‪+1 (276) 650-9001‬</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 The Next Generation. All rights reserved.</p>
+  </footer>
+
+
+  <script defer src="tng.js"></script>
+</body>
+</html>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const ticker = document.querySelector('.ticker-content');
+
+      ticker.addEventListener('mouseover', () => {
+        ticker.style.animationPlayState = 'paused';
+      });
+
+      ticker.addEventListener('mouseout', () => {
+        ticker.style.animationPlayState = 'running';
+      });
+    });
+  </script>
+</body>
+</html>
