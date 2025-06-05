@@ -137,7 +137,7 @@ header {
 /* Centered image with spacing */
 .center-image {
   display: block;
-  margin: 0 auto 32px;
+  margin: 100px auto ;
   width: 100%;
   max-width: 100%;
   height: auto;
